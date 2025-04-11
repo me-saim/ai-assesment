@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assessment Test - JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .options {
+      margin-left: 20px;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    .course{
+      display: none;
+      width: 200px;
+      height: 30px;
+      margin-left: 640px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Assessment Test - JavaScript MCQs</h1>
+
+<form id="quizForm">
+
+  <!-- Beginner to Advanced Questions with Mixed Correct Options -->
+  <div class="question">
+    <p>1. Inside which HTML element do we put the JavaScript code?</p>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A"> a) &lt;script&gt;</label><br> <!-- correct -->
+      <label><input type="radio" name="q1" value="B"> b) &lt;js&gt;</label><br>
+      <label><input type="radio" name="q1" value="C"> c) &lt;javascript&gt;</label><br>
+      <label><input type="radio" name="q1" value="D"> d) &lt;code&gt;</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. Which is the correct syntax to log "Hello" in the console?</p>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A"> a) print("Hello")</label><br>
+      <label><input type="radio" name="q2" value="B"> b) console.log("Hello")</label><br> <!-- correct -->
+      <label><input type="radio" name="q2" value="C"> c) echo("Hello")</label><br>
+      <label><input type="radio" name="q2" value="D"> d) log.console("Hello")</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. JavaScript is a ___ language.</p>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A"> a) Styling</label><br>
+      <label><input type="radio" name="q3" value="B"> b) Markup</label><br>
+      <label><input type="radio" name="q3" value="C"> c) Database</label><br>
+      <label><input type="radio" name="q3" value="D"> d) Programming</label><br> <!-- correct -->
+    </div>
+  </div>
+
+  <div class="question">
+    <p>4. How do you create a function in JavaScript?</p>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A"> a) function myFunction()</label><br> <!-- correct -->
+      <label><input type="radio" name="q4" value="B"> b) def myFunction()</label><br>
+      <label><input type="radio" name="q4" value="C"> c) create myFunction()</label><br>
+      <label><input type="radio" name="q4" value="D"> d) function:myFunction()</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>5. How do you call a function named <code>myFunction</code>?</p>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A"> a) myFunction()</label><br> <!-- correct -->
+      <label><input type="radio" name="q5" value="B"> b) myFunction.call()</label><br>
+      <label><input type="radio" name="q5" value="C"> c) Call.myFunction()</label><br>
+      <label><input type="radio" name="q5" value="D"> d) call myFunction</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>6. Which symbol is used for single-line comments in JavaScript?</p>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A"> a) //</label><br> <!-- correct -->
+      <label><input type="radio" name="q6" value="B"> b) #</label><br>
+      <label><input type="radio" name="q6" value="C"> c) &lt;!-- --&gt;</label><br>
+      <label><input type="radio" name="q6" value="D"> d) *</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>7. What does <code>typeof</code> return for an array?</p>
+    <div class="options">
+      <label><input type="radio" name="q7" value="A"> a) list</label><br>
+      <label><input type="radio" name="q7" value="B"> b) array</label><br>
+      <label><input type="radio" name="q7" value="C"> c) undefined</label><br>
+      <label><input type="radio" name="q7" value="D"> d) object</label><br> <!-- correct -->
+    </div>
+  </div>
+
+  <div class="question">
+    <p>8. Which function converts a string to an integer?</p>
+    <div class="options">
+      <label><input type="radio" name="q8" value="A"> a) stringToInt()</label><br>
+      <label><input type="radio" name="q8" value="B"> b) parseInt()</label><br> <!-- correct -->
+      <label><input type="radio" name="q8" value="C"> c) convert()</label><br>
+      <label><input type="radio" name="q8" value="D"> d) Integer()</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>9. What is the output of <code>typeof NaN</code>?</p>
+    <div class="options">
+      <label><input type="radio" name="q9" value="A"> a) NaN</label><br>
+      <label><input type="radio" name="q9" value="B"> b) undefined</label><br>
+      <label><input type="radio" name="q9" value="C"> c) object</label><br>
+      <label><input type="radio" name="q9" value="D"> d) number</label><br> <!-- correct -->
+    </div>
+  </div>
+
+  <div class="question">
+    <p>10. Which keyword is used to declare a block-scoped variable?</p>
+    <div class="options">
+      <label><input type="radio" name="q10" value="A"> a) define</label><br>
+      <label><input type="radio" name="q10" value="B"> b) let</label><br> <!-- correct -->
+      <label><input type="radio" name="q10" value="C"> c) var</label><br>
+      <label><input type="radio" name="q10" value="D"> d) static</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>11. What will be the result of: <code>Boolean("")</code>?</p>
+    <div class="options">
+      <label><input type="radio" name="q11" value="A"> a) true</label><br>
+      <label><input type="radio" name="q11" value="B"> b) null</label><br>
+      <label><input type="radio" name="q11" value="C"> c) NaN</label><br>
+      <label><input type="radio" name="q11" value="D"> d) false</label><br> <!-- correct -->
+    </div>
+  </div>
+
+  <div class="question">
+    <p>12. Which array method removes the last element from an array?</p>
+    <div class="options">
+      <label><input type="radio" name="q12" value="A"> a) unshift()</label><br>
+      <label><input type="radio" name="q12" value="B"> b) shift()</label><br>
+      <label><input type="radio" name="q12" value="C"> c) pop()</label><br> <!-- correct -->
+      <label><input type="radio" name="q12" value="D"> d) remove()</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>13. What is a closure in JavaScript?</p>
+    <div class="options">
+      <label><input type="radio" name="q13" value="A"> a) A closed function</label><br>
+      <label><input type="radio" name="q13" value="B"> b) A function having access to parent scope even after parent function closes</label><br> <!-- correct -->
+      <label><input type="radio" name="q13" value="C"> c) A syntax error</label><br>
+      <label><input type="radio" name="q13" value="D"> d) A callback</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>14. Which method is used to delay execution of a function?</p>
+    <div class="options">
+      <label><input type="radio" name="q14" value="A"> a) setTimeout()</label><br> <!-- correct -->
+      <label><input type="radio" name="q14" value="B"> b) sleep()</label><br>
+      <label><input type="radio" name="q14" value="C"> c) wait()</label><br>
+      <label><input type="radio" name="q14" value="D"> d) delay()</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>15. What is the correct way to write an arrow function in JavaScript?</p>
+    <div class="options">
+      <label><input type="radio" name="q15" value="A"> a) const add => (a, b) a + b;</label><br>
+      <label><input type="radio" name="q15" value="B"> b) add = (a, b) -> a + b;</label><br>
+      <label><input type="radio" name="q15" value="C"> c) const add = (a, b) => a + b;</label><br> <!-- correct -->
+      <label><input type="radio" name="q15" value="D"> d) function add(a, b) => a + b;</label>
+    </div>
+  </div>
+
+  <button type="button" onclick="checkAnswers()">Submit Answers</button>
+</form>
+
+<div id="result"></div>
+
+<a href="https://home.sangarsh.in/courses/javascript/" class="course" id="course">Go To Course</a>
+
+<script>
+  const correctAnswers = {
+    q1: "A",
+    q2: "B",
+    q3: "D",
+    q4: "A",
+    q5: "A",
+    q6: "A",
+    q7: "D",
+    q8: "B",
+    q9: "D",
+    q10: "B",
+    q11: "D",
+    q12: "C",
+    q13: "B",
+    q14: "A",
+    q15: "C"
+  };
+
+  function checkAnswers() {
+    let score = 0;
+    for (let i = 1; i <= 15; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected && selected.value === correctAnswers["q" + i]) {
+        score++;
+      }
+    }
+    var course=document.getElementById('course');
+    var course=document.getElementById('course1');
+
+    let resultText = "";
+    if (score >= 12) {
+      resultText = `🎉 Grade A - Excellent! You scored ${score}/15.`;
+      course.style.display='block';
+    } else if (score >= 9) {
+      resultText = `✅ Grade B - Good job! You scored ${score}/15.`;
+      course.style.display='block';
+    } else if (score >= 6) {
+      resultText = `🙂 Grade C - Fair understanding. You scored ${score}/15.`;
+      course.style.display='block';
+    } else {
+      resultText = `📝 Grade D - Keep learning! You scored ${score}/15.`;
+      course.style.display='block';
+    }
+
+    document.getElementById("result").textContent = resultText;
+  }
+</script>
+
+</body>
+</html>

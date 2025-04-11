@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assessment Test - Python</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .options {
+      margin-left: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #result {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .course{
+      display: none;
+      width: 200px;
+      height: 30px;
+      margin-left: 640px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Assessment Test - Python MCQs</h1>
+
+<form id="quizForm">
+
+  <!-- Beginner (Grade A) -->
+  <div class="question">
+    <p>1. What is the correct file extension for Python files?</p>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A" /> a) .py</label><br/>
+      <label><input type="radio" name="q1" value="B" /> b) .python</label><br/>
+      <label><input type="radio" name="q1" value="C" /> c) .pt</label><br/>
+      <label><input type="radio" name="q1" value="D" /> d) .pyt</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>2. Which of the following is used to print in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A" /> a) echo</label><br/>
+      <label><input type="radio" name="q2" value="B" /> b) print()</label><br/>
+      <label><input type="radio" name="q2" value="C" /> c) write()</label><br/>
+      <label><input type="radio" name="q2" value="D" /> d) display()</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>3. What is the output of <code>print(2 + 3 * 2)</code>?</p>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A" /> a) 10</label><br/>
+      <label><input type="radio" name="q3" value="B" /> b) 12</label><br/>
+      <label><input type="radio" name="q3" value="C" /> c) 8</label><br/>
+      <label><input type="radio" name="q3" value="D" /> d) 7</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>4. How do you insert comments in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A" /> a) // comment</label><br/>
+      <label><input type="radio" name="q4" value="B" /> b) # comment</label><br/>
+      <label><input type="radio" name="q4" value="C" /> c) /* comment */</label><br/>
+      <label><input type="radio" name="q4" value="D" /> d) -- comment</label>
+    </div>
+  </div>
+
+  <!-- Intermediate (Grade B) -->
+  <div class="question">
+    <p>5. Which keyword is used to define a function in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A" /> a) function</label><br/>
+      <label><input type="radio" name="q5" value="B" /> b) def</label><br/>
+      <label><input type="radio" name="q5" value="C" /> c) func</label><br/>
+      <label><input type="radio" name="q5" value="D" /> d) define</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>6. Which data type is used to store text?</p>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A" /> a) int</label><br/>
+      <label><input type="radio" name="q6" value="B" /> b) string</label><br/>
+      <label><input type="radio" name="q6" value="C" /> c) str</label><br/>
+      <label><input type="radio" name="q6" value="D" /> d) text</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>7. What does the <code>len()</code> function do?</p>
+    <div class="options">
+      <label><input type="radio" name="q7" value="A" /> a) Adds numbers</label><br/>
+      <label><input type="radio" name="q7" value="B" /> b) Finds length</label><br/>
+      <label><input type="radio" name="q7" value="C" /> c) Converts to string</label><br/>
+      <label><input type="radio" name="q7" value="D" /> d) Deletes item</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>8. Which of these is a Python tuple?</p>
+    <div class="options">
+      <label><input type="radio" name="q8" value="A" /> a) {1, 2, 3}</label><br/>
+      <label><input type="radio" name="q8" value="B" /> b) [1, 2, 3]</label><br/>
+      <label><input type="radio" name="q8" value="C" /> c) (1, 2, 3)</label><br/>
+      <label><input type="radio" name="q8" value="D" /> d) &lt;1, 2, 3&gt;</label>
+    </div>
+  </div>
+
+  <!-- Upper Intermediate (Grade C) -->
+  <div class="question">
+    <p>9. What does <code>range(5)</code> produce?</p>
+    <div class="options">
+      <label><input type="radio" name="q9" value="A" /> a) 1 2 3 4 5</label><br/>
+      <label><input type="radio" name="q9" value="B" /> b) 0 1 2 3 4</label><br/>
+      <label><input type="radio" name="q9" value="C" /> c) 0 to 5</label><br/>
+      <label><input type="radio" name="q9" value="D" /> d) 1 to 5</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>10. What will <code>type([])</code> return?</p>
+    <div class="options">
+      <label><input type="radio" name="q10" value="A" /> a) list</label><br/>
+      <label><input type="radio" name="q10" value="B" /> b) dict</label><br/>
+      <label><input type="radio" name="q10" value="C" /> c) tuple</label><br/>
+      <label><input type="radio" name="q10" value="D" /> d) set</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>11. Which keyword is used for a loop in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q11" value="A" /> a) for</label><br/>
+      <label><input type="radio" name="q11" value="B" /> b) do</label><br/>
+      <label><input type="radio" name="q11" value="C" /> c) repeat</label><br/>
+      <label><input type="radio" name="q11" value="D" /> d) while</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>12. What does the <code>strip()</code> method do in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q12" value="A" /> a) Removes spaces</label><br/>
+      <label><input type="radio" name="q12" value="B" /> b) Capitalizes text</label><br/>
+      <label><input type="radio" name="q12" value="C" /> c) Joins strings</label><br/>
+      <label><input type="radio" name="q12" value="D" /> d) Replaces strings</label>
+    </div>
+  </div>
+
+  <!-- Advanced (Grade D) -->
+  <div class="question">
+    <p>13. Which keyword is used for error handling in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q13" value="A" /> a) except</label><br/>
+      <label><input type="radio" name="q13" value="B" /> b) error</label><br/>
+      <label><input type="radio" name="q13" value="C" /> c) catch</label><br/>
+      <label><input type="radio" name="q13" value="D" /> d) finally</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>14. Which of these is used to define an anonymous function in Python?</p>
+    <div class="options">
+      <label><input type="radio" name="q14" value="A" /> a) def</label><br/>
+      <label><input type="radio" name="q14" value="B" /> b) lambda</label><br/>
+      <label><input type="radio" name="q14" value="C" /> c) function</label><br/>
+      <label><input type="radio" name="q14" value="D" /> d) return</label>
+    </div>
+  </div>
+
+  <div class="question">
+    <p>15. What does the <code>*args</code> in a function do?</p>
+    <div class="options">
+      <label><input type="radio" name="q15" value="A" /> a) Returns list</label><br/>
+      <label><input type="radio" name="q15" value="B" /> b) Accepts any number of arguments</label><br/>
+      <label><input type="radio" name="q15" value="C" /> c) Repeats function</label><br/>
+      <label><input type="radio" name="q15" value="D" /> d) Breaks function</label>
+    </div>
+  </div>
+
+  <button type="button" onclick="checkAnswers()">Submit Answers</button>
+
+</form>
+
+<div id="result"></div>
+
+<a href="https://home.sangarsh.in/courses/python-beginner/" class="course" id="course">Go To Course</a>
+<a href="https://home.sangarsh.in/courses/python/" class="course" id="course2">Go To Course</a>
+
+<script>
+  const correctAnswers = {
+    q1: "A",
+    q2: "B",
+    q3: "D",
+    q4: "B",
+    q5: "B",
+    q6: "C",
+    q7: "B",
+    q8: "C",
+    q9: "B",
+    q10: "A",
+    q11: "A",
+    q12: "A",
+    q13: "A",
+    q14: "B",
+    q15: "B"
+  };
+
+  function checkAnswers() {
+    let score = 0;
+    for (let i = 1; i <= 15; i++) {
+      const selected = document.querySelector(`input[name="q${i}"]:checked`);
+      if (selected && selected.value === correctAnswers["q" + i]) {
+        score++;
+      }
+    }
+    var course=document.getElementById('course');
+    var course=document.getElementById('course2');
+
+    let resultText = "";
+    if (score >= 12) {
+      resultText = `🎉 Grade A - Excellent! You scored ${score}/15.`;
+      course2.style.display='block';
+    } else if (score >= 9) {
+      resultText = `✅ Grade B - Good job! You scored ${score}/15.`;
+      course2.style.display='block';
+    } else if (score >= 6) {
+      resultText = `🙂 Grade C - Fair understanding. You scored ${score}/15.`;
+      course.style.display='block';
+    } else {
+      resultText = `📝 Grade D - Keep learning! You scored ${score}/15.`;
+      course.style.display='block';
+    }
+
+    document.getElementById("result").textContent = resultText;
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assessment Modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+    <button class="px-4 py-2 bg-blue-600 text-white rounded" onclick="openModal()">Start Assessment</button>
+    
+    <div id="modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg w-96">
+            <h2 class="text-xl font-bold mb-4">AI Subject Recommendation</h2>
+            <label class="block text-sm font-medium">Describe your needs:</label>
+            <textarea id="userInput" class="w-full p-2 border rounded mt-2" rows="3"></textarea>
+            <button class="mt-4 px-4 py-2 bg-green-600 text-white rounded w-full" onclick="StartAssesment()">Assesment Page</button>
+            <div id="recommendations" class="mt-4 text-sm text-gray-700"></div>
+            <button class="mt-4 px-4 py-2 bg-red-600 text-white rounded w-full" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+        }
+
+        function StartAssesment() {
+            const userInput = document.getElementById('userInput').value.toLowerCase();
+            var recommendations=''
+            if (userInput.includes("python")) {
+                window.location.href = "python-assesment.html";
+            } else if (userInput.includes("java")) {
+                window.location.href = "java_assessment.html";
+            }else if (userInput.includes("cpp" || "CPP" || "c++")) {
+                window.location.href = "CPP-Assesment.html";
+            }else if (userInput.includes("javascript")) {
+                window.location.href = "javascript.assesment.html";
+            }
+             else {
+                recommendations = "Course Not Found";
+            }
+            
+            document.getElementById('recommendations').innerText = recommendations;
+        }
+    </script>
+</body>
+</html>
